@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "FuelFox",
+    "slug": "fuelfox",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "fuelfox",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF0E0"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fuelfox.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FuelFox uses the camera to capture photo of your meal"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF0E0"
+      },
+      "package": "com.fuelfox.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FuelFox uses the camera to capture photo of your meal"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#E8813A"
+        }
+      ]
+    ]
+  }
+}
