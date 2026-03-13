@@ -1,0 +1,10 @@
+# Screenshots
+*.PNG
+*.png
+!app/assets/*.png
+
+# Resized images
+resized/
+
+# Environment files
+app/server/.env
